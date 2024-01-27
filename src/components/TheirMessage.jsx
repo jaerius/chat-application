@@ -12,14 +12,14 @@ const TheirMessage = ({ lastMessage, message }) => {
         {message?.attachments?.length > 0 ?
             (
                 <img
-                    src={message.attachemnts[0].file}
+                    src={message.attachments[0].file}
                     alt="message-attacment"
                     className="message-image"
                     style={{ marginLeft: isFirstMessageByUser ? '4px': '48px'}}
 
                 />
             ) : (
-                <div classNmae="message" style={{float: 'left', marginRight:'#CABCDC' }}>
+                <div classNmae="message" style={{float: 'left', backgroundColor: '#CABCDC', marginLeft: isFirstMessageByUser ? '4px': '48px' }}>
                     {message.text}
                 </div>
             )
